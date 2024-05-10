@@ -5,7 +5,7 @@ module.exports = {
         port: process.env.port || 300
     },
     database:{
-        connection: process.env.connection || 'mongodb:\\127.0.0.1:27017'
+        connection: process.env.connection || 'mongodb://127.0.0.1:27017'
     },
     auth:{
         secret: 'c1c2c3c4c5'
