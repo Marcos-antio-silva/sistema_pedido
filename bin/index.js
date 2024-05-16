@@ -14,6 +14,9 @@ app.set('views', 'views');
 //estaticos
 app.use [express.static('public')];
 
+const cliente_route = require('../src/rotas/cliente');
+app.use('/cliente', cliente_route);
+
 //rota padrao 
 app.use('/', (req, res) => {
     res.render('index');

@@ -1,6 +1,6 @@
 require('../modls/cliente');
 const mongoose = require('mongoose');
-const modelo = mongoose.model('clientes');
+const modelo = mongoose.model('cliente');
 
 class Cliente {
     static async criar(dados) {

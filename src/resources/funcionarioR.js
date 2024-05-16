@@ -2,7 +2,7 @@ require('../modls/cliente');
 const mongoose = require('mongoose');
 const modelo = mongoose.model('funcionarios');
 const cript = require('bcrypt')
-const salt = 30
+const salt = 10
 
 class Funcionario{
     static async criar(dados){
