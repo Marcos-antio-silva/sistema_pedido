@@ -19,12 +19,15 @@ const Schema = mongoose.Schema;
 const smc = new Schema({
     nome: {
         type: String,
-        required: true,
+        //required: true,
         trim : true
     },
     telefone: {
         type: String,
-        required: true
+        //required: true
     },
 });
-module.exports = mongoose.model('cliente',smc)
+
+const Cliente = mongoose.model("Cliente", smc);
+
+module.exports = Cliente

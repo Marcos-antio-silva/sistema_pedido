@@ -1,6 +1,6 @@
-const Cliente = require('../controler/cliente');
-const express = require("express");
-const router = express.Router();
+const Cliente = require ('../controler/cliente');
+const app = require("express");
+const router = app.Router();
 
 router.get('/',Cliente.getCriar);
 router.post('/',Cliente.postCriar);
